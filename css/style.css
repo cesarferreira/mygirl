@@ -1,0 +1,73 @@
+body{
+	text-align: center;
+	background: #00ECB9;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+h1{
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 40px;
+	/*background-color: red;*/
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.middleDiv {
+    position : absolute;
+    width    : 500px;
+    height   : 200px;
+    left     : 34%;
+    top      : 40%;
+    margin-left : -30px; /* half of the width  */
+    margin-top  : -30px; /* half of the height */
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+@-webkit-keyframes blink {
+        0%   { background:grey; }
+        50%  { background:green;}
+        100% { background:grey; }
+}
+@-moz-keyframes blink {
+        0%   { background:grey; }
+        50%  { background:green;}
+        100% { background:grey; }
+}
+@-ms-keyframes blink {
+        0%   { background:grey; }
+        50%  { background:green;}
+        100% { background:grey; }
+}
+body{
+     -webkit-animation: blink 3s infinite;
+     -moz-animation:    blink 3s infinite;
+     -ms-animation:     blink 3s infinite;
+}
